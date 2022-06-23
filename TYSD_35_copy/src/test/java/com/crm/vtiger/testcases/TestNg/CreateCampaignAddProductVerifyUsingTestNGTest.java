@@ -28,8 +28,8 @@ public class CreateCampaignAddProductVerifyUsingTestNGTest extends BaseClass {
 	
 	
 	//@Test(groups = "regressionTest")
-	@Test(retryAnalyzer = com.crm.comcast.genericutility.RetryAnalyser.class)
-	//@Test
+	//@Test(retryAnalyzer = com.crm.comcast.genericutility.RetryAnalyser.class)
+	@Test
 	public void CreateCampaignAddProductVerifyTest() throws Throwable
 	
 	
@@ -62,24 +62,7 @@ public class CreateCampaignAddProductVerifyUsingTestNGTest extends BaseClass {
 				//validation using Assert
 				Assert.assertTrue(actualname.contains(Campaignname));
 				System.out.println("Campagin is created and product is added");
-				
 			
-				
-				
-				
-				
-//				WebElement list = campaignhomepage.getTitleText();
-//				
-//				String camplist = list.getText();
-//					
-//					if(camplist.contains(Campaignname))
-//					{
-//						System.out.println("Campagin is created and product is added");
-//					}
-//					else
-//					{
-//						System.out.println("Campagin is not created and product is not added");
-//					}
 	}
 				    	
 	}

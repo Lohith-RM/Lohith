@@ -48,10 +48,10 @@ public class BaseClass {
 	@BeforeClass
 	public void launchTheBrowser() throws Throwable
 	{
-		String BROWSER = System.getProperty("browser");
-		String URL = System.getProperty("url");
-		//String BROWSER = flib.getPropertyKeyValue("browser");
-		//String URL = flib.getPropertyKeyValue("url");
+		//String BROWSER = System.getProperty("browser");
+		//String URL = System.getProperty("url");
+		String BROWSER = flib.getPropertyKeyValue("browser");
+		String URL = flib.getPropertyKeyValue("url");
 		
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
