@@ -79,7 +79,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		
 		// enter the URL of the Application
-		driver.get(URL);
+		sdriver.get(URL);
 		
 		//implicitly wait
 		wlib.waitForPageToLoad(driver);
