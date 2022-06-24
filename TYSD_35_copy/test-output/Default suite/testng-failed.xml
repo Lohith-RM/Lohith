@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.vtiger.testcases.TestNg.CreateNewProductWithVendorTestNGTest">
+      <class name="com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest">
         <methods>
           <include name="connectToDataBase"/>
           <include name="loginToAppln"/>
           <include name="logoutFromAppln"/>
           <include name="closeBrowser"/>
+          <include name="CreateCampaignAddProductVerifyTest"/>
           <include name="launchTheBrowser"/>
           <include name="closeDataBase"/>
-          <include name="CreateNewProductWithVendorTest"/>
         </methods>
-      </class> <!-- com.crm.vtiger.testcases.TestNg.CreateNewProductWithVendorTestNGTest -->
+      </class> <!-- com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

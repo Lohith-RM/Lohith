@@ -275,12 +275,13 @@ public class WebDriverUtility {
 		 * @param screenShotname
 		 * @throws IOException
 		 */
-		public void takeScreenShot(WebDriver driver, String screenShotname) throws Throwable
+		public static String takeScreenShot(WebDriver driver, String screenShotname) throws Throwable
 		{
 			TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 			File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
 			File dest = new File("./screenShots/"+screenShotname+".PNG");
 			Files.copy(src, dest);
+			return screenShotname;
 		}
 		
 		/**
