@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.comcast.genericutility.BaseClass;
@@ -17,6 +18,8 @@ import com.crm.objectRepository.ContactInfoPage;
 import com.crm.objectRepository.LoginPage;
 import com.crm.objectRepository.VtigerHomePage;
 
+
+@Listeners(com.crm.comcast.genericutility.ItestListenerImplmnt.class)
 public class CreateContactTestNGTest extends BaseClass {
 	
 	@Test()

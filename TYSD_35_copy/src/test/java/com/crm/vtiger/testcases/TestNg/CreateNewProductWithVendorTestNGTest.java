@@ -3,6 +3,7 @@ package com.crm.vtiger.testcases.TestNg;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -17,6 +18,8 @@ import com.crm.objectRepository.ProductHomePage;
 import com.crm.objectRepository.ProductInfromPage;
 import com.crm.objectRepository.VtigerHomePage;
 
+
+@Listeners(com.crm.comcast.genericutility.ItestListenerImplmnt.class)
 public class CreateNewProductWithVendorTestNGTest extends BaseClass {
 
 	@Test()

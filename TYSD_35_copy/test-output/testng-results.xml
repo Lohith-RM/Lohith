@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-24T14:54:43 IST" name="Default suite" finished-at="2022-06-24T14:57:23 IST" duration-ms="160248">
+  <suite started-at="2022-06-24T15:30:15 IST" name="Default suite" finished-at="2022-06-24T15:30:57 IST" duration-ms="41586">
     <groups>
     </groups>
-    <test started-at="2022-06-24T14:54:43 IST" name="Default test" finished-at="2022-06-24T14:57:23 IST" duration-ms="160248">
+    <test started-at="2022-06-24T15:30:15 IST" name="Default test" finished-at="2022-06-24T15:30:57 IST" duration-ms="41586">
       <class name="com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest">
-        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@53ce1329]" started-at="2022-06-24T14:54:43 IST" name="connectToDataBase" finished-at="2022-06-24T14:54:43 IST" duration-ms="41" status="PASS">
+        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@3e11f9e9]" started-at="2022-06-24T15:30:15 IST" name="connectToDataBase" finished-at="2022-06-24T15:30:15 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDataBase -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@53ce1329]" started-at="2022-06-24T14:54:43 IST" name="launchTheBrowser" finished-at="2022-06-24T14:55:22 IST" duration-ms="39440" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@3e11f9e9]" started-at="2022-06-24T15:30:16 IST" name="launchTheBrowser" finished-at="2022-06-24T15:30:24 IST" duration-ms="8631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@53ce1329]" started-at="2022-06-24T14:55:23 IST" name="loginToAppln" finished-at="2022-06-24T14:56:03 IST" duration-ms="40127" status="PASS">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@3e11f9e9]" started-at="2022-06-24T15:30:24 IST" name="loginToAppln" finished-at="2022-06-24T15:30:28 IST" duration-ms="3331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method signature="CreateCampaignAddProductVerifyTest()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@53ce1329]" started-at="2022-06-24T14:56:03 IST" name="CreateCampaignAddProductVerifyTest" finished-at="2022-06-24T14:57:03 IST" duration-ms="60423" status="PASS">
+        <test-method signature="CreateCampaignAddProductVerifyTest()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@3e11f9e9]" started-at="2022-06-24T15:30:28 IST" name="CreateCampaignAddProductVerifyTest" finished-at="2022-06-24T15:30:49 IST" duration-ms="21113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateCampaignAddProductVerifyTest -->
-        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@53ce1329]" started-at="2022-06-24T14:57:04 IST" name="logoutFromAppln" finished-at="2022-06-24T14:57:12 IST" duration-ms="8930" status="PASS">
+        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@3e11f9e9]" started-at="2022-06-24T15:30:49 IST" name="logoutFromAppln" finished-at="2022-06-24T15:30:56 IST" duration-ms="6877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromAppln -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@53ce1329]" started-at="2022-06-24T14:57:12 IST" name="closeBrowser" finished-at="2022-06-24T14:57:23 IST" duration-ms="10670" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@3e11f9e9]" started-at="2022-06-24T15:30:56 IST" name="closeBrowser" finished-at="2022-06-24T15:30:57 IST" duration-ms="1000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@53ce1329]" started-at="2022-06-24T14:57:23 IST" name="closeDataBase" finished-at="2022-06-24T14:57:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest@3e11f9e9]" started-at="2022-06-24T15:30:57 IST" name="closeDataBase" finished-at="2022-06-24T15:30:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDataBase -->

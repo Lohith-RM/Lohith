@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -24,6 +25,8 @@ import com.crm.objectRepository.VtigerHomePage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
+@Listeners(com.crm.comcast.genericutility.ItestListenerImplmnt.class)
 public class CreateOrganizationTestNGTest extends BaseClass{
 	
 	//@Test(groups = "smokeTest")

@@ -23,7 +23,7 @@ import com.crm.objectRepository.VtigerHomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-//@Listeners(com.crm.comcast.genericutility.ItestListenerImplmnt.class)
+@Listeners(com.crm.comcast.genericutility.ItestListenerImplmnt.class)
 public class CreateCampaignAddProductVerifyUsingTestNGTest extends BaseClass {
 	
 	
