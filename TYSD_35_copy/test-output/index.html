@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1905724580\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1914594894\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest" class="method navigator-link" hash-for-method="CreateCampaignAddProductVerifyTest">CreateCampaignAddProductVerifyTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.crm.vtiger.testcases.TestNg.CreateOrganizationTestNGTest" class="method navigator-link" hash-for-method="createOrganizationTest">createOrganizationTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -122,16 +122,34 @@
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest</span>
+              <span class="class-name">com.crm.vtiger.testcases.TestNg.CreateOrganizationTestNGTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateCampaignAddProductVerifyTest">
-                  </a> <!-- CreateCampaignAddProductVerifyTest -->
-                  <span class="method-name">CreateCampaignAddProductVerifyTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;BROWSER&quot; is null
-	at com.crm.comcast.genericutility.BaseClass.launchTheBrowser(BaseClass.java:56)
+                  <a name="createOrganizationTest">
+                  </a> <!-- createOrganizationTest -->
+                  <span class="method-name">createOrganizationTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.121.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eaaa4b80430591ed542a8e0e196143f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.crm.comcast.genericutility.BaseClass.launchTheBrowser(BaseClass.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -167,7 +185,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1905724580\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1914594894\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -176,7 +194,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest&quot;/&gt;
+      &lt;class name=&quot;com.crm.vtiger.testcases.TestNg.CreateOrganizationTestNGTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -218,8 +236,8 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CreateCampaignAddProductVerifyTest')
-data.setCell(0, 2, 'com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest')
+data.setCell(0, 1, 'createOrganizationTest')
+data.setCell(0, 2, 'com.crm.vtiger.testcases.TestNg.CreateOrganizationTestNGTest')
 data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
@@ -251,7 +269,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.crm.vtiger.testcases.TestNg.CreateCampaignAddProductVerifyUsingTestNGTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.crm.vtiger.testcases.TestNg.CreateOrganizationTestNGTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">connectToDataBase</span>
                 <span class="method-start">0 ms</span>
@@ -260,27 +278,27 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">launchTheBrowser</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToAppln</span>
-                <span class="method-start">175 ms</span>
+                <span class="method-start">32459 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">CreateCampaignAddProductVerifyTest</span>
-                <span class="method-start">181 ms</span>
+                <span class="method-name">createOrganizationTest</span>
+                <span class="method-start">32463 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromAppln</span>
-                <span class="method-start">197 ms</span>
+                <span class="method-start">32473 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">201 ms</span>
+                <span class="method-start">32478 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeDataBase</span>
-                <span class="method-start">615 ms</span>
+                <span class="method-start">32587 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
