@@ -11,36 +11,48 @@ import org.testng.ITestResult;
 
 public class ItestListenerImplmnt implements ITestListener {
 
+	ExtentReports report;
+	ExtentTest test;
+
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		test=report.createTest(result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		test.log(Status.PASS, result.getMethod().getMethodName());
+		test.log(Status.PASS, result.getThrowable());
 		
 	}
-
+	/**
+	 * To take screenshot of failed test scripts
+	 */
 	public void onTestFailure(ITestResult result) {
+		test.log(Status.FAIL,result.getMethod().getMethodName());
+		test.log(Status.FAIL, result.getThrowable());
 		
-		String testName = result.getMethod().getMethodName();
-		System.out.println(testName+"====Executing====");
-		
-		EventFiringWebDriver edrDriver = new EventFiringWebDriver(BaseClass.sdriver);
-		File src = edrDriver.getScreenshotAs(OutputType.FILE);
-		
-		try {
-			FileUtils.copyFile(src, new File("./screenshots/"+testName+".PNG"));
-		}
-		catch(Exception e)
-		{
+	    try {
+	    	String screenShotName=WebDriverUtility.takeScreenShot(BaseClass.sdriver, result.getMethod().getMethodName());
+	    	test.addScreenCaptureFromPath(screenShotName);
+	    	} catch (Throwable e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+//		String testName = result.getMethod().getMethodName();
+//		System.out.println(testName+"====Executing=====");
+//		
+//		EventFiringWebDriver edriver=new EventFiringWebDriver(BaseClass.sdriver);
+//		File src = edriver.getScreenshotAs(OutputType.FILE);
+//		try {
+//			FileUtils.copyFile(src, new File("./screenShot/"+testName+".PNG"));
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		test.log(Status.SKIP, result.getMethod().getMethodName());
+		test.log(Status.SKIP, result.getThrowable());
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -49,13 +61,23 @@ public class ItestListenerImplmnt implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		
+	ExtentSparkReporter spark=new ExtentSparkReporter("./ExtentReports/report.html");
+	
+	spark.config().setTheme(Theme.DARK);
+	spark.config().setReportName("Framework Extent Report");
+	spark.config().setDocumentTitle("sanjay's document");
+	
+	report=new ExtentReports();
+	report.attachReporter(spark);
+	report.setSystemInfo("createdBy", "Lohith");
+	report.setSystemInfo("ReviwedBy", "Sanjay");
+	report.setSystemInfo("platform", "windows-7");
+	report.setSystemInfo("ServerName","ApacheTomcat");
 	}
 
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+		report.flush();
 	}
 
 }
